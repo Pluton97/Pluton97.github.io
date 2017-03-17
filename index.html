@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
+</head>
+<body>
+
+<div class="burger">Меню</div>
+
+<ul>
+    <li>Первое</li>
+    <li>Второе</li>
+    <li>Третье</li>
+</ul>
+
+
+
+  <script>
+    $(function(){
+    
+    var $burger = $('.burger');
+    
+    var $menu = $('ul');
+    
+    $burger.click(function(){
+        if($menu.hasClass('active')){
+        
+            $menu.slideDown('normal').removeClass('active');
+        }
+        else{
+            
+            $menu.slideUp('normal').addClass('active');
+        }
+    });
+});
+  </script>
+</body>
+<html>
