@@ -18,14 +18,14 @@ body, html {
 }
  
 .container.open-sidebar {
-    left: 250px;
+    left: 350px;
 }
  
 #sidebar {
     position: absolute;
     left: -240px;
     background: #DF314D;
-    width: 240px;
+    width: 350px;
     height: 100%;
     box-sizing: border-box;
 }
