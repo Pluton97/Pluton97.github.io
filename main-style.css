@@ -1,103 +1,44 @@
-body, html {
-    background-color: silver;
-    height: 100%;
-    margin: 0;
-    overflow:hidden;
-    font-family: helvetica;
-    font-weight: 100;
-	transition: 8s;
+body {
+    font-family: "Lato", sans-serif;
 }
- body:hover, html:hover {
- background-color: #B52C41
-}
-.container {
-    position: relative;
+
+.sidenav {
     height: 100%;
-    width: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    -webkit-transition:  left 0.4s ease-in-out;
-    -moz-transition:  left 0.4s ease-in-out;
-    -ms-transition:  left 0.4s ease-in-out;
-    -o-transition:  left 0.4s ease-in-out;
-    transition:  left 0.4s ease-in-out;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
 }
- 
-.container.open-sidebar {
-    left: 450px;
-}
- 
-#sidebar {
-    position: absolute;
-    left: -460px;
-    background: #DF314D;
-    width: 360px;
-    height: 100%;
-    box-sizing: border-box;
-}
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#sidebar ul li {
-    margin: 0;
-}
-#sidebar ul li a {
-    padding: 15px 20px;
-    font-size: 16px;
-    font-weight: 100;
-    color: white;
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
-    border-bottom: 1px solid #C9223D;
-    -webkit-transition:  background 0.3s ease-in-out;
-    -moz-transition:  background 0.3s ease-in-out;
-    -ms-transition:  background 0.3s ease-in-out;
-    -o-transition:  background 0.3s ease-in-out;
-    transition:  background 0.3s ease-in-out;
+    transition: 0.3s
+
 }
-#sidebar ul li:hover a {
-    background: #BE1933;
-	text-shadow: 0 0 12px white;
-	box-shadow: 0 0 24px black;
+
+.sidenav a:hover{
+    color: #f1f1f1;
 }
-.main-content {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: relative;
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
-.main-content .content{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-padding-left: 60px;
-width: 100%;
-}
-.main-content .content h1{
-    font-weight: 100;
-}
-.main-content .content p{
-    width: 100%;
-    line-height: 160%;
-}
-.main-content #sidebar-toggle {
-    background: #DF314D;
-    border-radius: 0px;
-    display: block;
-    position: relative;
-    padding: 10px 7px;
-    float: left;
-}
-.main-content #sidebar-toggle .bar{
-     display: block;
-    width: 18px;
-    margin-bottom: 3px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 1px;   
-}
-.main-content #sidebar-toggle .bar:last-child{
-     margin-bottom: 0;   
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
