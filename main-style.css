@@ -4,7 +4,7 @@ body {
     color: black;
     transition: 8s;
 }
-body {
+body:hover {
     background-color: black;
     color: white;
 }
