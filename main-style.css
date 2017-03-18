@@ -1,9 +1,14 @@
 body, html {
+    background-color: silver;
     height: 100%;
     margin: 0;
     overflow:hidden;
     font-family: helvetica;
     font-weight: 100;
+	transition: 8s;
+}
+ body:hover, html:hover {
+ background-color: #B52C41
 }
 .container {
     position: relative;
@@ -18,14 +23,14 @@ body, html {
 }
  
 .container.open-sidebar {
-    left: 350px;
+    left: 450px;
 }
  
 #sidebar {
     position: absolute;
-    left: -240px;
+    left: -460px;
     background: #DF314D;
-    width: 350px;
+    width: 360px;
     height: 100%;
     box-sizing: border-box;
 }
@@ -52,7 +57,9 @@ body, html {
     transition:  background 0.3s ease-in-out;
 }
 #sidebar ul li:hover a {
-    background: #C9223D;
+    background: #BE1933;
+	text-shadow: 0 0 12px white;
+	box-shadow: 0 0 24px black;
 }
 .main-content {
     width: 100%;
