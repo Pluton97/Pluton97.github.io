@@ -4,11 +4,6 @@ body {
     color: black;
     transition: 8s;
 }
-body:hover {
-    background-color: black;
-    color: white;
-}
-
 .sidenav {
     height: 100%;
     width: 0;
