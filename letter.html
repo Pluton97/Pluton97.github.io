@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Письмо Узумаки</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="main-style.css">
+<style>
+  .cbalink {display: none;}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="links" href="index.html">Хата Узумаки</a>
+  <a class="links" href="letter.html">Напиши Наруто!</a>
+  <a class="links" href="#">Проекты Узумаки</a>
+  <a class="links" href="#">Контакты Узумаки</a>
+</div>
+<span style="font-size:50pt;cursor:pointer" onclick="openNav()">&#9776; Меню</span>
+<h2>"Напиши Наруто!"</h2>
+<p>Зайди в меню >> "Напиши Наруто" >> Напиши свои данные(телефон,имя,мэил и сообщение).</p>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class = 'container'>
+  <div class = 'col-xs-12 col-sm-12 col-md-8 col-lg-8'>
+   <h2 style = 'text-align: center'>Обратная связь. Свяжитесь с нами!</h2>
+    <form name = 'feedback' action = '' method = 'POST' role = 'form'>
+      <div class = 'form-group'>
+        <label for 'name'>Ваше имя</label>
+          <input id = 'name' type = 'text' class = 'form-control' placeholder = 'Введите своё имя' name = 'name' maxlength = 100 value = "" />
+        <p class = 'help-block'>Внимание! Просим вводить сюда достоверные данные.</p>
+      </div>
+      <div class = 'form-group'>
+        <label for 'email'>Ваш email</label>
+          <input id = 'email' type = 'text' class = 'form-control' placeholder = 'Введите свой email' name = 'email' maxlength = 100 value = "" />
+        <p class = 'help-block'>Email нужен для того, чтобы впоследствии отправить вам свой ответ.</p>
+      </div>
+      <div class = 'form-group'>
+        <label for 'tema'>Номер телефона</label>
+          <input id = 'tema' type = 'text' class = 'form-control' placeholder = 'Введите тему вашего сообщения' name = 'tema' maxlength = 100 value = "" />
+        <p class = 'help-block'>Здесь нужно как можно короче изложить смысл вашего сообщения.</p>
+      </div>
+      <div class = 'form-group'>
+        <label for 'msg'>Ваше сообщение ... <span class = 'glyphicon glyphicon-pencil'></span> </label>
+          <textarea id = 'msg' type = 'text' class = 'form-control' placeholder = 'Введите ваше сообщение' name = 'msg'></textarea>
+        <p class = 'help-block'>Ваше сообщение должно нести хоть какой-то посыл.</p>
+      </div>
+      <input type = 'submit' class = 'btn btn-success' value = 'Отправить письмо' name = 'done' /><br />
+        <span class = 'text-success'>Сообщение успешно отправлено. Благодарим.</span>
+        <span class = 'text-danger'></span>
+        
+        
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--]-->
+
+
+<div class="cumf_bt_form_wrapper" style="display:none">
+<form id="contact_us_mail_feedback" action="/oldTi9QvqM6ytokU9Q8ylQq" method="post">
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Contact Us</legend>
+        <!-- Text input-->
+        <div class="cumf_bt_form-group">
+            <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_name">name</label>
+            <div class="col-md-4">
+                <input id="cumf_bt_name" name="cumf_bt_name" type="text" placeholder="your name" class="cumf_bt_form-control cumf_bt_input-md" required />
+                <span class="cumf_bt_help-block">Please enter your name</span>
+            </div>
+        </div>
+        <!-- Text input-->
+        <div class="cumf_bt_form-group">
+            <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_email">your email</label>
+            <div class="col-md-4">
+                <input id="cumf_bt_email" name="cumf_bt_email" type="text" placeholder="enter your email" class="cumf_bt_form-control cumf_bt_input-md" required />
+                <span class="cumf_bt_help-block">please enter your email</span>
+            </div>
+        </div>
+        <!-- Textarea -->
+        <div class="cumf_bt_form-group">
+            <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_message">your message</label>
+            <div class="col-md-4">
+                <textarea class="cumf_bt_form-control" id="cumf_bt_message" name="cumf_bt_message">Message goes here</textarea>
+            </div>
+        </div>
+        <input type="submit" id="cumf_bt_submit" value="Send"/>
+    </fieldset>
+</form>
+</div>
+
+</body>
+</html>
