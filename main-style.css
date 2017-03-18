@@ -2,7 +2,6 @@ body {
     font-family: "helvetica", sans-serif;
     background-color: white;
     color: black;
-    transition: 8s;
 }
 .sidenav {
     height: 100%;
